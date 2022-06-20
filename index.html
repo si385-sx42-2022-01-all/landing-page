@@ -1,73 +1,156 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style2.css">
+  <title>Hello, world!</title>
 </head>
 <body>
-    <h1>Titulo</h1>
-    <h2>Subtitulo</h2>
-    <h3>SubSubtitulo</h3>
-    <h4>Parrafo</h4>
 
-    <p>Lenguaje de Programacion</p>
-    <ol>
-        <li>java</li>
-        <li>C#</li>
-        <li>Php</li>
-    </ol>
-    <p>IDE de desarrollo</p>
-    <ul>
-        <li>WebStrom</li>
-        <li>Visual Studio Code</li>
-        <li>Eclipse</li>
-        <li><a href="borrar.html">NetBeans</a> </li>
-    </ul>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">University</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Caracteristicas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">precios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contactanos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Opción 1</a></li>
+              <li><a class="dropdown-item" href="#">Opción2</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
 
-    <p>Enlaces, <a href="borrar.html">link</a>, anchor</p>
-    <a href="https://www.google.com/">Google</a>
-    <a href="borrar.html">pagina Borrar</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<main>
+  <section>
+    <div class="card margin-20">
+      <div class="card-header">
+        Featured
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="card text-center margin-20">
+      <div class="card-header">
+        Featured
+      </div>
+      <div class="card-body">
 
-    <p>Tablas</p>
-    <table>
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Last Name</th>
-                <th>First Name</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>Rodriguez</td>
-                <td>Jose</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>martinez</td>
-                <td>Rosa maria</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Caceres Linares</td>
-                <td>Victor Fernando</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td>----</td>
-                <td>----</td>
-                <td>----</td>
-            </tr>
-        </tfoot>
-    </table>
+        <table class="table">
+          <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+          </tbody>
+        </table>
 
-    table>((thead>(tr>th*3))+tbody+tfoot)
+      </div>
 
+    </div>
+  </section>
+  <section>
+    <div class="row margin-20">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="card margin-20">
+      <div class="card-header">
+        PieChart Example
+      </div>
+      <div class="card-body">
+        <div id="carlitos" style="width: 900px; height: 500px;"></div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+
+</footer>
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="js/piechart.js"></script>
 
 </body>
 </html>
